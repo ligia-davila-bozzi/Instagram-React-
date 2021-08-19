@@ -1,12 +1,12 @@
 import Navbar from "./Navbar";
-import Content from "./Content";
+import Main from "./Main";
 import Footer from "./Footer";
 
 export default function App () {
     return (
         <div class="root">
             <Navbar />
-            <Content />
+            <Main />
             <Footer />
         </div>
     );

@@ -1,11 +1,11 @@
-import Left from "./Left";
-import Sidebar from "./Sidebar";
+import Stories from "./Stories";
+import Posts from "./Posts";
 
 export default function Content() {
     return (
-        <div class="corpo">
-            <Left />
-            <Sidebar />
-      </div>
+        <div class="content">
+            <Stories />
+            <Posts />
+        </div>
     );
 }

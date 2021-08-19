@@ -1,8 +1,8 @@
 import Sugestions from "./Sugestions";
 
-export default function Sidebar() {
+export default function Aside() {
     return (
-        <div class="sidebar">
+        <aside>
             <div class="usuario">
                 <img src="assets/img/catanacomics.svg" />
                 <div class="texto">
@@ -20,6 +20,6 @@ export default function Sidebar() {
             <div class="copyright">
                 © 2021 INSTAGRAM DO FACEBOOK
             </div>
-        </div>
+        </aside>
     );
 }
