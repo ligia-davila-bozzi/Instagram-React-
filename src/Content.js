@@ -1,10 +1,10 @@
-import Stories from "./Stories";
+import StoriesBox from "./Stories";
 import Posts from "./Posts";
 
 export default function Content() {
     return (
         <div class="content">
-            <Stories />
+            <StoriesBox />
             <Posts />
         </div>
     );

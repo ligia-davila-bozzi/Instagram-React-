@@ -1,15 +1,15 @@
 import Sugestions from "./Sugestions";
 
+const loggedUser = {
+    username: "catanacomics",
+    userImg: "assets/img/catanacomics.svg",
+    name: "Catana"
+};
+
 export default function Aside() {
     return (
         <aside>
-            <div class="usuario">
-                <img src="assets/img/catanacomics.svg" />
-                <div class="texto">
-                    <strong>catanacomics</strong>
-                    Catana
-                </div>
-            </div>
+            <UserInfo userImg={loggedUser.userImg} username={loggedUser.username} name={loggedUser.name} />
 
             <Sugestions />
 
@@ -21,5 +21,17 @@ export default function Aside() {
                 © 2021 INSTAGRAM DO FACEBOOK
             </div>
         </aside>
+    );
+}
+
+function UserInfo (props) {
+    return (
+        <div class="usuario">
+            <img src={props.userImg} />
+            <div class="texto">
+                <strong>{props.username}</strong>
+                {props.name}
+            </div>
+        </div>
     );
 }
